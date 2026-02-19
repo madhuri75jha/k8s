@@ -2,7 +2,7 @@ pipeline {
   agent {
     kubernetes {
       inheritFrom 'kubectl-agent'
-      defaultcontainer 'kubectl'      
+      defaultContainer 'kubectl'      
     }
   } 
   stages {
