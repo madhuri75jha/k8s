@@ -5,12 +5,12 @@ pipeline {
       defaultContainer 'kubectl'      
     }
   } 
-  stage('Checkout') {
+  stages {
+    stage('Checkout') {
       steps {
         git 'https://github.com/madhuri75jha/k8s.git'
       }
     }
-  stages {
     stage('Deploy to Kubernetes') {
       steps {
         sh '''
