@@ -28,7 +28,7 @@ pipeline {
       echo 'Application SUCCESSFULLY deployed to KUBERNETES!!!'
     }
     failure {
-      echo 'Deploment FAILED!!!!!', check LOGS.'
+      echo 'Deploment FAILED!!!!!, check LOGS.'
     }
   }
 }
